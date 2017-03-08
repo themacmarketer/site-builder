@@ -17,14 +17,14 @@
     <!-- Custom styles for this template -->
     <style>
 	body {
-	  padding-top: 20px;
-	  padding-bottom: 20px;
+	  min-height: 2000px;
 	}
-
-	.navbar {
-	  margin-bottom: 20px;
+	
+	.navbar-static-top {
+	  margin-bottom: 19px;
 	}
     </style>
+    <link href="https://www.runstorageapis.com/css/bootstrap-theme.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,11 +34,9 @@
   </head>
 
   <body>
-
-    <div class="container">
-
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
+  
+<!-- Static navbar -->
+      <nav class="navbar navbar-default navbar-static-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -50,12 +48,17 @@
             <a class="navbar-brand" href="#">%SETUP_TITLE</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right">
 %MENU
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
+      
+      
+    <div class="container">
+
+      
 
 
 
