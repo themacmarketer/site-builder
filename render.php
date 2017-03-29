@@ -40,6 +40,7 @@ $h = str_replace('%MENU', $m, $h);
 
 // --- PUT YOUR TEMP DIR HERE ---
 $temp = "/temp";
+// ------------------------------
 
 $zip = new ZipArchive();
 $filename = $temp."/website-".genid().".zip";
@@ -53,15 +54,18 @@ $zip->addFromString("website-source.json.pkg" , $data);
 
 foreach($a["pages"] as $value)
 {
-$dat = $h."<h2>".base64_decode($value["title"])."</h2><br>".base64_decode($value["content"]);
-$dat = str_replace("\n","",$dat);
-$zip->addFromString($value["file"] , $dat);
+        $dat = $h."<h2>".base64_decode($value["title"])."</h2><br>".base64_decode($value["content"]);
+        $dat = str_replace("\n","",$dat);
+        $zip->addFromString($value["file"] , $dat);
 }
 
 $zip->close();
 
+// set headers
 header("Content-Type: application/zip");
 header("Content-Disposition: attachment; filename=\"website-".genid().".zip\"");
 echo file_get_contents($filename);
+
+// remove temp file
 unlink($filename);
 ?>
