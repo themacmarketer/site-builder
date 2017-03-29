@@ -1,12 +1,19 @@
 <?php
+// Site Builder
+// Open a JSON PKG file
 session_start();
 include('core.php');
+
 if($_FILES["usrf"]["tmp_name"] != "")
 {
-$_SESSION = json_decode(file_get_contents($_FILES["usrf"]["tmp_name"]),true);
-header('Location: /?s=1');
-exit;
+    // load file into $_SESSION
+    $_SESSION = json_decode(file_get_contents($_FILES["usrf"]["tmp_name"]),true);
+  
+    // redirect to Step 1 of index.php
+    header('Location: /?s=1');
+    exit;
 }
+
 echohead();
 ?>
 <h3>Open .JSON.PKG file</h3>
