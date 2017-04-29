@@ -42,7 +42,7 @@ foreach ($list as $key => $value)
         <input class="form-control" type="text" name="description" placeholder="Website Description" />
         <!-- Select one of the Styles available -->
         <div class="form-group">
-          <select class="form-control" id="sel1">
+          <select class="form-control" name="style">
           
             <?=$select_list_options;?>
           </select>
