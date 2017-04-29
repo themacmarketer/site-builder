@@ -46,3 +46,16 @@ function load_template_from_file ($template_id) {
   return $template_content;
   
 }
+
+function get_template_list () {
+  
+  global $config;
+  $path = $config["templates"]["base_directory"]."/".$config["templates"]["list_file"];
+  if(!file_exists($path)) return false;
+  
+  $template_list = json_decode(file_get_contents($path), true);
+  $template_list = $template_list["templates"];
+  
+  return $template_list; 
+  
+}
