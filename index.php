@@ -17,7 +17,7 @@ foreach ($list as $key => $value)
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello World</title>
+    <title>Site Builder</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://www.runstorageapis.com/css/bootstrap.min.css" rel="stylesheet">
