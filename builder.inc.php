@@ -36,7 +36,7 @@ function insert_content_into_template ($template, $title, $description, $content
 function load_template_from_file ($template_id) {
     
   global $config;
-  $template_list = json_decode(file_get_contents($config["templates"]["base_directory"]."/templates.json"), true);
+  $template_list = json_decode(file_get_contents($config["templates"]["base_directory"]."/".$config["templates"]["list_file"]), true);
   $template = $config["templates"]["base_directory"].$template_list["templates"][$template_id][0];
   
   if(!file_exists($template)) return false;
