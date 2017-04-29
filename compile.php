@@ -22,7 +22,7 @@ $html = markdown_to_html($input["content"]);
 $site = insert_content_into_template ($template, $input["title"], $input["description"], $html);
 
 $type = "text/html";
-$filename = preg_replace('/[^\da-z]/i', '', $input["title_raw"]).".html";
+$filename = strtolower(preg_replace('/[^\da-z]/i', '-', $input["title_raw"])).".html";
 header("Content-Type: $type");
 header("Content-Disposition: attachment; filename=\"$filename\"");
 
