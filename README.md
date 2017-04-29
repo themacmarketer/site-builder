@@ -1,2 +1,2 @@
 # Site Builder
-RS site builder v2.0
+Site Builder is an easy-to-use tool to create one-page websites from Markdown.
