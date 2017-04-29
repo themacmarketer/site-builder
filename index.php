@@ -5,7 +5,7 @@ include('builder.inc.php');
 
 $list = get_template_list();
 foreach ($list as $key => $value)
-  $select_list_options = "<option value="$key">$value[1]</option>\n            ";
+  $select_list_options = "<option value=\"$key\">$value[1]</option>\n            ";
 ?>
 <!DOCTYPE html>
 <html lang="en">
