@@ -30,27 +30,28 @@ foreach ($list as $key => $value)
     <![endif]-->
   </head>
   <body>
-    <h2>Site Builder</h2>
+    <div class="container">
+        <h2>Site Builder</h2>
 
-    <!-- The data encoding type, enctype, MUST be specified as below -->
-    <form enctype="multipart/form-data" action="/compile" method="POST">
-        <!-- MAX_FILE_SIZE must precede the file input field -->
-        <!-- Here we use 2097152 Byte (2M), but this can be change without any issues -->
-        <input type="hidden" name="MAX_FILE_SIZE" value="2097152" />
-        <!-- Select Website Title and Description -->
-        <input class="form-control" type="text" name="title" placeholder="Website Title" />
-        <input class="form-control" type="text" name="description" placeholder="Website Description" />
-        <!-- Select one of the Styles available -->
-        <div class="form-group">
-          <select class="form-control" name="style">
-          
-            <?=$select_list_options;?>
-          </select>
-        </div>
-        <!-- Name of input element determines name in $_FILES array -->
-        Submit a Markdown-File: <input name="userfile" type="file" class="form-control" />
-        <input type="submit" class="btn btn-success" value="Create" />
-    </form>
+        <!-- The data encoding type, enctype, MUST be specified as below -->
+        <form enctype="multipart/form-data" action="/compile" method="POST">
+            <!-- MAX_FILE_SIZE must precede the file input field -->
+            <!-- Here we use 2097152 Byte (2M), but this can be change without any issues -->
+            <input type="hidden" name="MAX_FILE_SIZE" value="2097152" />
+            <!-- Select Website Title and Description -->
+            <input class="form-control" type="text" name="title" placeholder="Website Title" /> <br /> <br />
+            <input class="form-control" type="text" name="description" placeholder="Website Description" /> <br /> <br />
+            <!-- Select one of the Styles available -->
+            <div class="form-group">
+              <select class="form-control" name="style">
 
+                <?=$select_list_options;?>
+              </select>
+            </div><br /> <br />
+            <!-- Name of input element determines name in $_FILES array -->
+            Submit a Markdown-File: <input name="userfile" type="file" class="form-control" /> <br /> <br />
+            <input type="submit" class="btn btn-success" value="Create" />
+        </form>
+    </div>
   </body>
 </html>
