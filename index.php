@@ -34,7 +34,7 @@ foreach ($list as $key => $value)
         <h2>Site Builder</h2>
 
         <!-- The data encoding type, enctype, MUST be specified as below -->
-        <form enctype="multipart/form-data" action="/compile" method="POST">
+        <form enctype="multipart/form-data" action="compile" method="POST">
             <!-- MAX_FILE_SIZE must precede the file input field -->
             <!-- Here we use 2097152 Byte (2M), but this can be change without any issues -->
             <input type="hidden" name="MAX_FILE_SIZE" value="2097152" />
