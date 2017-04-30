@@ -49,7 +49,7 @@ foreach ($list as $key => $value)
               </select>
             </div><br /> <br />
             <!-- Name of input element determines name in $_FILES array -->
-            Submit a Markdown-File: <input name="userfile" type="file" class="form-control" /> <br /> <br />
+            <input name="userfile" type="file" class="form-control" /> <br /> <br />
             <input type="submit" class="btn btn-success" value="Create" />
         </form>
     </div>
