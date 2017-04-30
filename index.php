@@ -32,7 +32,7 @@ foreach ($list as $key => $value)
   <body>
     <div class="container">
         <h2>Site Builder</h2>
-
+        <p>Please select a title, description &amp; theme. With this information and a markdown file with the site's content, Site Builder will create a static one-page website.</p>
         <!-- The data encoding type, enctype, MUST be specified as below -->
         <form enctype="multipart/form-data" action="compile" method="POST">
             <!-- MAX_FILE_SIZE must precede the file input field -->
@@ -47,7 +47,7 @@ foreach ($list as $key => $value)
 
                 <?=$select_list_options;?>
               </select>
-            </div><br /> <br />
+            </div><br />
             <!-- Name of input element determines name in $_FILES array -->
             <input name="userfile" type="file" class="form-control" /> <br /> <br />
             <input type="submit" class="btn btn-success" value="Create" />
