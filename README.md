@@ -1,10 +1,10 @@
 # Site Builder
 Site Builder is an easy-to-use tool to create static one-page websites from Markdown.
 
-# Quickstart
+### Quickstart
 Download the latest release from GitHub ([https://github.com/leveled-up/site-builder/releases/latest](https://github.com/leveled-up/site-builder/releases/latest)) and unpack it into your webserver's public directory (e.g. `/var/www/html/`). You should see the same page as you can see on [https://site-builder.leveled-up.com](https://site-builder.leveled-up.com/).
 
-# Tutorial
+### Tutorial
 In this tutorial I'll show you how to customize Site Builder to your needs. 
 
 **1. Change Configuration**
@@ -45,5 +45,5 @@ The default `templates.json` file is shown below:
 }
 ```
 
-# License
+### License
 Site Builder is licensed as shown in [LICENSE.md](https://github.com/leveled-up/site-builder/blob/master/LICENSE.md).
