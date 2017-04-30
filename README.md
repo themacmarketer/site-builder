@@ -33,7 +33,7 @@ After you created the template as shown above, you need to register it in `templ
 
 **3. Working with "templates.json"**
 
-For templates created as shown in 2. to show up on `index.php`, you'll need to register them in `templates.json`. In this file there is a `templates` node with sub-nodes for each template. The name of each sub-node must be a unique numeric value (e.g. `002`, `003`,...). This sub-node is an array of the template's filename `[0]` and it's title `[1]` (shown on `index.php`).
+For templates created as shown in 2. to show up on `index.php`, you'll need to register them in `templates.json`. In this file there is a `templates` node with sub-nodes for each template. The name of each sub-node must be a unique numeric value (e.g. `002`, `003`,...). This sub-node is an array of the template's filename `[0]` and its title `[1]` (shown on `index.php`).
 
 The default `templates.json` file is shown below:
 
@@ -47,3 +47,6 @@ The default `templates.json` file is shown below:
 
 ### License
 Site Builder is licensed as shown in [LICENSE.md](https://github.com/leveled-up/site-builder/blob/master/LICENSE.md).
+
+### Contact Me
+If there are any questions feel free to contact me via Twitter Direct Message [@YujayAnthony](https://twitter.com/YujayAnthony).
