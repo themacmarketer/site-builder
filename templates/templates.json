@@ -1,5 +1,6 @@
 {
     "templates" : {
-        "001" : [  "cayman.html", "Cayman Theme" ]
+        "001" : [  "cayman.html", "Cayman Theme" ],
+        "002" : [  "slate.html", "Slate Theme" ]
     }
 }
